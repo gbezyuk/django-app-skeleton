@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'utils',
     'accounts',
     'main',
+    'news',
 )
 
 PROJECT_APPS = (
@@ -71,6 +72,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 	'django.contrib.auth.context_processors.auth',
     'main.context_processors.login_url',
     'main.context_processors.default_avatar_url',
+    'news.context_processors.news_list',
+    #'news.context_processors.archive',
 )
 
 LOGGING = {
